@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="display">
+      <input type="text" placeholder="search name" class="name">
+      <input type="text" placeholder="search address" class="address">
+      <table class="table">
+      <%for(var i = 0; i<length; i++){ %>
+        <tr>
+          <td><%= people[i].name %></td>
+          <td><%= people[i].address %></td>
+        </tr>
+      <% } %>
+    </table>
+    </div>
+    <div class="add">
+      <form action="/" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="address" placeholder="Address">
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
