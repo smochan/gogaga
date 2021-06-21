@@ -23,7 +23,7 @@ function html(){
     $("table").html(html);
 }
 
-const url = "http://localhost:3000/api";
+const url = "https://gogaga.herokuapp.com/api";
 
 async function getPeople(url){
     let x = await fetch(url);
